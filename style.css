@@ -1,0 +1,111 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-image: url("https://static.vecteezy.com/system/resources/previews/056/635/420/non_2x/rainy-day-wallpaper-hd-photo.jpeg"); 
+    background-position: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0; 
+    color: #334155;
+} 
+
+.weather-container { 
+    background-color: #ffffff;
+    padding: 2rem; 
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    text-align: center; 
+    width: 90%;
+    max-width: 400px;
+} 
+ 
+.weather-app-title { 
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center; 
+} 
+
+
+.city-input { 
+    padding: 0.75rem 1rem; 
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    width: calc(100% - 2rem);
+    margin-bottom: 1rem;
+    font-size: 1rem; 
+    color: #475569;
+    transition: all 0.2s ease-in-out;
+} 
+
+.city-input:focus { 
+    outline: none; 
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+} 
+
+/* Button styling */ 
+.get-weather-button { 
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem; 
+    border-radius: 0.5rem;
+    border: none; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+} 
+
+.get-weather-button:hover { 
+    background-color: #2563eb;
+    transform: translateY(-1px);
+} 
+
+.get-weather-button:active { 
+    transform: translateY(0);
+} 
+
+/* Weather information display area */ 
+.weather-info { 
+    margin-top: 1.5rem; 
+    padding-top: 1.5rem; 
+    border-top: 1px solid #e2e8f0;
+    min-height: 100px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+} 
+
+/* City and country name in weather info */ 
+.weather-info h2 { 
+    font-size: 2rem; 
+    font-weight: 600; 
+    margin-bottom: 0.5rem; 
+    color: #1e293b;
+} 
+
+/* General text in weather info */ 
+.weather-info p { 
+    font-size: 1.1rem; 
+    margin-bottom: 0.4rem; 
+    color: #475569;
+} 
+
+/* Temperature specific styling */ 
+.weather-info .temp { 
+    font-size: 2.5rem; 
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.5rem; 
+} 
+
+/* Error message styling */ 
+.error-message { 
+    color: #ef4444;
+    font-weight: 500;
+    margin-top: 1rem; 
+}
