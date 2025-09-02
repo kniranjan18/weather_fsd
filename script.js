@@ -3,11 +3,6 @@ const weatherInfoDiv = document.getElementById('weatherInfo');
 const cityInput = document.getElementById('cityInput');
 const getWeatherBtn = document.getElementById('getWeatherBtn');
 
-/** 
- * Fetches weather data from the OpenWeatherMap API for a given city. 
- * Uses Fetch API and Promises for asynchronous operations. 
- * @param {string} city - The name of the city to fetch weather for. 
- */ 
 async function getWeatherData(city) {
     weatherInfoDiv.innerHTML = '<p>Loading weather data... ⏳</p>';
 
@@ -35,10 +30,7 @@ async function getWeatherData(city) {
     }
 }
 
-/** 
- * Displays the fetched weather data in the weatherInfoDiv. 
- * @param {object} data - The weather data object received from the API. 
- */ 
+
 function displayWeather(data) {
     const cityName = data.name;
     const country = data.sys.country;
@@ -58,7 +50,6 @@ function displayWeather(data) {
     `;
 }
 
-// Add event listener to the button
 getWeatherBtn.addEventListener('click', () => {
     const city = cityInput.value.trim();
     if (city) {
