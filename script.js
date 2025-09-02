@@ -59,14 +59,12 @@ getWeatherBtn.addEventListener('click', () => {
     }
 });
 
-// Optional: Allow pressing Enter key to trigger search
 cityInput.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
         getWeatherBtn.click();
     }
 });
 
-// Initial message on load
 window.onload = () => {
     weatherInfoDiv.innerHTML = '<p>Enter a city name and click "Get Weather" to see the current conditions.</p>';
 };
